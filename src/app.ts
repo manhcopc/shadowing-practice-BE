@@ -2,8 +2,7 @@ import express, { ErrorRequestHandler } from 'express';
 import Logger from './core/Logger';
 import cors from 'cors';
 import { corsUrl, environment } from './config';
-import './database'; // initialize database
-import './cache'; // initialize cache
+import './database/firebase'; // initialize Firebase Firestore
 import {
   NotFoundError,
   ApiError,

@@ -11,6 +11,7 @@ import credential from './access/credential';
 import blog from './blog';
 import blogs from './blogs';
 import profile from './profile';
+import shadowing from './shadowing';
 
 const router = express.Router();
 
@@ -22,6 +23,8 @@ router.use(apikey);
 /*---------------------------------------------------------*/
 router.use(permission(Permission.GENERAL));
 /*---------------------------------------------------------*/
+router.use('/shadowing', shadowing);
+router.use('/v1/shadowing', shadowing);
 router.use('/signup', signup);
 router.use('/login', login);
 router.use('/logout', logout);
