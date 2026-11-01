@@ -1,0 +1,10 @@
+{
+  "js/ts.validate.enabled": true,
+  "js/ts.preferences.importModuleSpecifier": "relative",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
+
